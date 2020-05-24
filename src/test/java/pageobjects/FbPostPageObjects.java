@@ -14,9 +14,9 @@ public class FbPostPageObjects  extends WebBasePage {
     public void creatPost(){
         clickElementVisible(By.xpath("//div[@class='_m_1 _1gr3']"),"Status",10);
         staticWait(4000);
-        WebElement Text = driver.findElement(By.xpath("//div[@class='_1mf _1mj']"));
-        Text.click();
-        Text.sendKeys("Hello World");
+        WebElement text = driver.findElement(By.xpath("//div[@class='_1mf _1mj']"));
+        text.click();
+        text.sendKeys("Hello World");
     }
     public void clickPost(){
         clickElementVisible(By.xpath("//span[contains(text(),'Post')]"),"Post",10);
